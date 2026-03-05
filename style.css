@@ -1,0 +1,18 @@
+body {
+  background:#fafafa;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.block {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ddd;
+}
+
+button {
+  padding: 10px 16px;
+  margin-top: 10px;
+}
