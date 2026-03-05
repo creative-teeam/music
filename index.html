@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ハモリ生成・練習アプリ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>ハモリ練習アプリ</h1>
+
+<div class="block">
+  <h2>① メロディ読み込み</h2>
+  <input type="file" id="melodyFile" accept="audio/*">
+  <button id="playMelody">メロディ再生</button>
+</div>
+
+<div class="block">
+  <h2>② ハモリ自動生成（3度上）</h2>
+  <button id="generateHarmony">ハモリ作成</button>
+  <button id="playHarmony">ハモリ再生</button>
+</div>
+
+<div class="block">
+  <h2>③ 自分の声を録音 → ピッチ可視化</h2>
+  <button id="startRec">録音開始</button>
+  <button id="stopRec">録音停止</button>
+  <canvas id="pitchCanvas" width="600" height="200"></canvas>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
