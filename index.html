@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>ハモリ生成・練習アプリ</title>
+  <title>ハモリ生成アプリ</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,16 +16,26 @@
 </div>
 
 <div class="block">
-  <h2>② ハモリ自動生成（3度上）</h2>
-  <button id="generateHarmony">ハモリ作成</button>
+  <h2>② ハモリ自動生成</h2>
+
+  <label>ハモリ特徴</label>
+  <input id="harmonyStyle" placeholder="例: 美しく / 盛り上げる / しっとり">
+
+  <button id="generateHarmony">ハモリ生成</button>
   <button id="playHarmony">ハモリ再生</button>
 </div>
 
 <div class="block">
-  <h2>③ 自分の声を録音 → ピッチ可視化</h2>
+  <h2>③ 録音 → ピッチ可視化</h2>
   <button id="startRec">録音開始</button>
   <button id="stopRec">録音停止</button>
   <canvas id="pitchCanvas" width="600" height="200"></canvas>
+</div>
+
+<div class="block">
+  <h2>④ ログ</h2>
+  <button id="showLogs">ログ表示</button>
+  <pre id="logArea"></pre>
 </div>
 
 <script src="app.js"></script>
